@@ -7,30 +7,46 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Product preview card component</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> 
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div class="main-container">
+    <img class="product-image" src="images/image-product-desktop.jpg" alt="Image of Gabrielle Essence Eau De Parfum">
+    <section class="product-text">
+      <span class="category">Perfume</span>
 
-  Preview
+      <h1 class="product">Gabrielle Essence Eau De Parfum</h1>
 
-  Gabrielle Essence Eau De Parfum
+      <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.</p>
+      
+      <span class="price">$149.99</span>
+      <span class="discount">$169.99</span>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
+      <form action="#" method="post">
+        <button>
+          <img src="images/icon-cart.svg" alt="Icon of a shopping cart">
+          Add to Cart
+        </button>
+      </form>
+    </section>
+    
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Mochitto</a>.
   </div>
 </body>
 </html>

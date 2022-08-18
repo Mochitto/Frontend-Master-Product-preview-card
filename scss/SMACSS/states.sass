@@ -1,0 +1,17 @@
+button
+    &:hover
+        background-color: hsl(158, 36%, 20%) // Darker cyan
+    &:active
+        background-color: hsl(158, 36%, 10%) // Darkest cyan
+
+
+@media (min-width: 1370px)
+    $desktop-multiplier: 1.3
+    html
+        font-size: 10px * $desktop-multiplier
+    
+    .main-container
+        width: 550px * $desktop-multiplier
+        left: calc(50% - 550px * #{$desktop-multiplier}/2)
+        height: 420px * $desktop-multiplier
+        top: calc(50vh - 420px * #{$desktop-multiplier}/2)
