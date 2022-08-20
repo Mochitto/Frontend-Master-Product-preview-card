@@ -26,18 +26,18 @@ Users should be able to:
 ### Screenshot
 | Given Desktop | Given Mobile |
 | :--------: | :--------:  |
-| ![](./screenshots/desktop-design.jpg)| ![](./screenshots/mobile-design.jpg) |
+| ![The given design for desktops](./screenshots/desktop-design.jpg)| ![The given design for mobile](./screenshots/mobile-design.jpg) |
 
 ------
 
 | Desktop | Mobile |
 | :--------: | :--------:  |
-| ![](./screenshots/Desktop%20view.png)| ![](./screenshots/Mobile%20view.png) |
+| ![My design for desktops](./screenshots/Desktop%20view.png)| ![My design for mobile](./screenshots/Mobile%20view.png) |
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-product-preview-card-with-sass-smacss-and-flexbox-bnVQ-y8aSZ)
-- Live Site URL: [Add live site URL here](https://mochitto.github.io/Frontend-Master-Product-preview-card/)
+- Solution URL: [Responsive product preview card with sass, smacss and flexbox](https://www.frontendmentor.io/solutions/responsive-product-preview-card-with-sass-smacss-and-flexbox-bnVQ-y8aSZ)
+- Live Site URL: [Hosted on Github Pages](https://mochitto.github.io/Frontend-Master-Product-preview-card/)
 
 ## My process
 I went with a desktop-first approach, as this was my first time working with responsiveness.
@@ -65,5 +65,5 @@ The first design was made using floats, later on changed to flex for learning pu
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Mochitto)
-- Twitter - [@yourusername](https://twitter.com/mochideveloper)
+- Frontend Mentor - [@Mochitto](https://www.frontendmentor.io/profile/Mochitto)
+- Twitter - [@mochideveloper](https://twitter.com/mochideveloper)
