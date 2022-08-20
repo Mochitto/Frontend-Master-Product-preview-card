@@ -16,8 +16,9 @@
 .prettierignore
 
 # Ignore sass building files
-.css.map
+*.css.map
 scss/.sass-cache/
+.sass-cache/
 
 # Ignore the design folder
 design/
