@@ -1,24 +1,25 @@
 body
-    height: 100%
+    height: calc(100vh - 15px) 
+    display: flex
+    margin-bottom: 15px
+
 
 .main-container
     width: 550px
     height: 420px
-    top: calc(50vh - 210px)
-    left: calc(50% - 275px)
+    margin: auto
     overflow: auto
-    position: absolute
+    display: flex
     
 .product-image
-    float: left
     background:
         image: url("../images/image-product-desktop.jpg") 
+        position: center
         size: cover
     height: 100%
     width: 50%
 
 .product-text
-    float: right
     width: 50%
     height: 100%
     padding: 5% 5%
@@ -33,7 +34,7 @@ h1
     margin-right: 3%
 
 .attribution
-    position: absolute
+    position: fixed
     height: 15px
     top: calc(100vh - 15px) 
     width: 100%

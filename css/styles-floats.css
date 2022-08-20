@@ -1,31 +1,23 @@
-/* This CSS was precompiled in sass and its parts divided following the SMACSS structure */
-/*************************************
- *              BASE                 *
- ************************************* */
+/* base */
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  font-size: 63.5%;
-}
+  font-size: 63.5%; }
 
 body {
   background-color: #f2ebe3;
   color: #6c7289;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.4rem;
-}
+  font-size: 1.4rem; }
 
 div {
-  background-color: white;
-}
+  background-color: white; }
 
 p {
   line-height: 2.4rem;
-  font-size: 1.3rem;
-}
+  font-size: 1.3rem; }
 
 h1 {
   font-family: "Fraunces", serif;
@@ -33,8 +25,7 @@ h1 {
   font-size: 2.8rem;
   line-height: 2.8rem;
   color: #1c232b;
-  word-break: break-word;
-}
+  word-break: break-word; }
 
 button {
   background-color: #3c8067;
@@ -45,165 +36,130 @@ button {
   width: 100%;
   display: block;
   border-radius: 10px;
-  border-style: solid;
-}
+  border-style: solid; }
 
-/*************************************
- *              LAYOUT               *
- ************************************* */
+/* layout */
 body {
-  height: calc(100vh - 15px);
-  display: flex;
-  margin-bottom: 15px;
-}
+  height: 100%; }
 
 .main-container {
   width: 550px;
   height: 420px;
-  margin: auto;
+  top: calc(50vh - 210px);
+  left: calc(50% - 275px);
   overflow: auto;
-  display: flex;
-}
+  position: absolute; }
 
 .product-image {
+  float: left;
   background-image: url("../images/image-product-desktop.jpg");
   background-position: center;
   background-size: cover;
   height: 100%;
-  width: 50%;
-}
+  width: 50%; }
 
 .product-text {
+  float: right;
   width: 50%;
   height: 100%;
-  padding: 5% 5%;
-}
+  padding: 5% 5%; }
 
 p {
-  margin-bottom: 10%;
-}
+  margin-bottom: 10%; }
 
 .price {
-  margin-right: 5%;
-}
+  margin-right: 5%; }
 
 h1 {
-  margin-right: 3%;
-}
+  margin-right: 3%; }
 
 .attribution {
-  position: fixed;
+  position: absolute;
   height: 15px;
   top: calc(100vh - 15px);
-  width: 100%;
-}
+  width: 100%; }
 
 button {
-  margin-top: 15%;
-}
+  margin-top: 15%; }
 
-/*************************************
- *              MODULES              *
- ************************************* */
+/* modules */
 .main-container {
-  border-radius: 2%;
-}
+  border-radius: 2%; }
 
 .price {
   font-family: "Fraunces", serif;
   font-weight: 700;
   font-size: 3rem;
-  color: #3c8067;
-}
+  color: #3c8067; }
 
 .discount {
   text-decoration: line-through;
-  font-size: 1.3rem;
-}
+  font-size: 1.3rem; }
 
 .category {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  font-size: 1.2rem;
-}
+  font-size: 1.2rem; }
 
-/*************************************
- *              STATES               *
- ************************************* */
+/* states */
 button:hover {
-  background-color: #214538;
-}
+  background-color: #214538; }
 button:active {
-  background-color: #10231c;
-}
+  background-color: #10231c; }
 
 /* desktop */
 @media (min-width: 1370px) {
   html {
-    font-size: 13px;
-  }
+    font-size: 13px; }
 
   .main-container {
     width: 715px;
+    left: calc(50% - 550px * 1.3/2);
     height: 546px;
-  }
+    top: calc(50vh - 420px * 1.3/2); }
 
   button {
-    height: 62.4px;
-  }
-}
+    height: 62.4px; } }
 /* tablet */
 @media (min-width: 768px) and (max-width: 1100px) {
   html {
-    font-size: 11px;
-  }
+    font-size: 11px; }
 
   .main-container {
     width: 605px;
+    left: calc(50% - 550px * 1.1/2);
     height: 462px;
-  }
+    top: calc(50vh - 420px * 1.1/2); }
 
   button {
-    height: 52.8px;
-  }
-}
+    height: 52.8px; } }
 /* mobile */
 @media screen and (max-width: 768px) {
   html {
-    font-size: 11.5px;
-  }
+    font-size: calc(10px + 0.2025vh); }
 
   .main-container {
-    width: 350px;
-    height: 600px;
-    border-radius: 10px;
-    flex-direction: column;
-  }
+    width: 91%;
+    left: 4.5%;
+    height: 91vh;
+    top: 4.5%;
+    border-radius: 10px; }
 
   button {
-    height: 55.2px;
-    margin-top: 10px;
-  }
+    height: 48px;
+    vertical-align: center; }
 
   .product-image {
+    float: none;
     background-image: url("../images/image-product-mobile.jpg");
     height: 40%;
-    width: 100%;
-  }
+    width: 100%; }
 
   .product-text {
+    float: none;
     height: 60%;
-    width: 100%;
-  }
-
-  h1 {
-    margin: 15px 0;
-  }
-
-  p {
-    margin: 15px 0;
-    line-height: 2rem;
-  }
-}
+    width: 100%; }
+    .product-text > * {
+      margin-bottom: 2vh; } }
 
 /*# sourceMappingURL=styles.css.map */

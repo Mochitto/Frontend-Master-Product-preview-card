@@ -12,9 +12,7 @@ button
     
     .main-container
         width: 550px * $desktop-multiplier
-        left: calc(50% - 550px * #{$desktop-multiplier}/2)
         height: 420px * $desktop-multiplier
-        top: calc(50vh - 420px * #{$desktop-multiplier}/2)
     
     button
         height: 48px * $desktop-multiplier
@@ -27,40 +25,40 @@ button
     
     .main-container
         width: 550px * $tablet-multiplier
-        left: calc(50% - 550px * #{$tablet-multiplier}/2)
         height: 420px * $tablet-multiplier
-        top: calc(50vh - 420px * #{$tablet-multiplier}/2)
     
     button
         height: 48px * $tablet-multiplier
 
 /* mobile
 @media screen and (max-width: 768px)
-    $mobile-multiplier: 1.0
+    $mobile-multiplier: 1.15
     html
-        font-size: calc(10px + 0.2025vh)
+        font-size: 10px * $mobile-multiplier
     
     .main-container
-        width: 91%
-        left: 4.5%
-        height: 91vh
-        top: 4.5%
+        width: 350px
+        height: 600px
         border-radius: 10px
-        // padding-bottom: 2%
+        flex-direction: column
 
     button
         height: 48px * $mobile-multiplier
+        margin-top: 10px
+        
 
     .product-image
-        float: none
-        background:
-            image: url("../images/image-product-mobile.jpg") 
+        background-image: url("../images/image-product-mobile.jpg") 
         height: 40%
         width: 100%
 
     .product-text
-        float: none
         height: 60%
         width: 100%
-        &>*
-            margin-bottom: 2vh
+    
+    h1
+        margin: 15px 0
+    
+    p
+        margin: 15px 0
+        line-height: 2rem
